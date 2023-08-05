@@ -2,8 +2,18 @@ body {
     font-family: Nunito;
 }
 
-.fred2 {
-    fill: rgb(226, 144, 43);
-    display: block;
+h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 10px;
+    padding: 10px;
+    color: blueviolet;    
 }
 
+img {
+    width: 20%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    display: block;    
+}
