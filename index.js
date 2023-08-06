@@ -40,4 +40,32 @@
 
 // LESSON 4: Staggering
 
-gsap.to("img", { y:-100, stagger:0.5 });
+//gsap.to("img", { y:-50, stagger:0.1 });
+
+// gsap.to("img", { y:-50, stagger:{
+//     each:1,
+// } });
+
+
+// gsap.to("img", { y:-50, stagger:{
+//     amount:1,
+// } });
+
+// gsap.to("img", { y:-50, stagger:{
+//     each:0.1,
+//     from:"edges", // other options: "start", "center", "edges"
+// } });
+
+// LESSON 5: CONTROL TWEEN PLAYBACK
+// var tween = gsap.to("img", { x:400, duration:3, ease:"bounce", paused:true });
+
+// when the animation comes to the end after clicking the play button,
+// we cannot click the play button again to restart the animation, thats why
+// we have the restart() method
+
+// document.getElementById("play").onclick = () => tween.play();
+// document.getElementById("pause").onclick = () => tween.pause();
+// document.getElementById("reverse").onclick = () => tween.reverse();
+// document.getElementById("restart").onclick = () => tween.restart();
+
+// LESSON 6: TranformOrigin
