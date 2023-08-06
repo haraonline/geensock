@@ -1,4 +1,3 @@
-
 // Context: This project using the GreenSock library to create animations for learning purposes
 // CDN Link to GSAP: https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js
 
@@ -37,7 +36,8 @@
 // gsap.to("img", { x:200, y:200, duration:3, ease: "bounce.inOut" });
 // gsap.to("img", { x:200, y:200, duration:3, ease: "bounce.back" });
 // gsap.to("img", { x:200, duration:3, ease: "bounce.back(2)" }); // eases are functions, so we can pass arguments to them
-
 // ease curves: https://greensock.com/docs/v3/Eases (check the ease visualizer)
 
 // LESSON 4: Staggering
+
+gsap.to("img", { y:-100, stagger:0.5 });
