@@ -12,3 +12,4 @@ GSAP ideas for Fretology:
 - using loops in animations ...
 - DOM selectors are important (byId, byClass, querySelector, querySelectorAll ...)
 - querySelectorAll returns a nodelist - check mdn docs
+- audio playing animation for the notes ... like the examples on gsap-showcase
