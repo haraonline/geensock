@@ -31,4 +31,38 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 70px;
+}
+
+circle {
+    fill: pink;
+    stroke: blueviolet;
+    margin: 50px;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 50px;    
+    width: 500px;
+    height: 350px;
+    display: flex;
+}
+
+#circle1 {
+    fill: pink;
+    stroke: black;
+    margin: 50px;
+}
+
+#circle2 {
+    fill: lightseagreen;
+    stroke: black;
+    margin: 50px;
+}
+
+#circle3 {
+    fill: yellowgreen;
+    stroke: black;
+    margin: 50px;
 }

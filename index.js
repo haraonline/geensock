@@ -57,15 +57,37 @@
 // } });
 
 // LESSON 5: CONTROL TWEEN PLAYBACK
-// var tween = gsap.to("img", { x:400, duration:3, ease:"bounce", paused:true });
+var tween = gsap.to(".circle", { x:400, duration:5, ease:"bounce", paused:true });
 
 // when the animation comes to the end after clicking the play button,
 // we cannot click the play button again to restart the animation, thats why
 // we have the restart() method
+// the pause property is set to true, so the animation will not start automatically
 
-// document.getElementById("play").onclick = () => tween.play();
-// document.getElementById("pause").onclick = () => tween.pause();
-// document.getElementById("reverse").onclick = () => tween.reverse();
-// document.getElementById("restart").onclick = () => tween.restart();
+document.getElementById("play").onclick = () => tween.play();
+document.getElementById("pause").onclick = () => tween.pause();
+document.getElementById("reverse").onclick = () => tween.reverse();
+document.getElementById("restart").onclick = () => tween.restart();
+
+// // another way
+// document.getElementById("speedUp").onclick = function () {
+//     // some code
+// }
 
 // LESSON 6: TranformOrigin
+// do later
+
+// Timeline
+//gsap.set(".box", { scale:0.7 }); // set the initial scale of the circle
+// gsap.timeline()
+//     .from("#circle1", { y:200, duration:2, ease:"bounce"})
+//     .from("#circle2", { y:200, duration:1, ease:"bounce"}, "-=1")
+//     .from("#circle3", { y:200, duration:1, ease:"bounce"}, "<")    
+//     .from("#circle3", { y:200, duration:1, ease:"bounce"}, "+=1")    
+//     .from("#circle3", { y:200, duration:1, ease:"bounce"}, "<0.5")    
+
+gsap.timeline()
+    .from("#circle1", { y:200, duration:1, ease:"bounce"}, 1)
+    .from("#circle2", { y:200, duration:1, ease:"bounce"}, 3)
+    .from("#circle3", { y:200, duration:1, ease:"bounce"}, 2) 
+    
