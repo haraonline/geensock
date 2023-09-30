@@ -13,3 +13,11 @@ GSAP ideas for Fretology:
 - DOM selectors are important (byId, byClass, querySelector, querySelectorAll ...)
 - querySelectorAll returns a nodelist - check mdn docs
 - audio playing animation for the notes ... like the examples on gsap-showcase
+- transformOrigin define from which point the graphics scale or start - check this later
+- check opacity
+- check the from Tween (what does this mean in various contexts ...)
+- var tl = gsap.timeline({repeat:1, yoyo:true}) - applies to everything inside the timeline ...
+- timeline defaults:
+  var tl = gsap.timeline({defaults:{opacity:0, ease:"back", etc}})
+
+- GSDevTools - bonus plugin for Club-Greensock members ... Bonus plugins on codepen ...
