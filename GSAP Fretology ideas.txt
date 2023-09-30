@@ -21,3 +21,6 @@ GSAP ideas for Fretology:
   var tl = gsap.timeline({defaults:{opacity:0, ease:"back", etc}})
 
 - GSDevTools - bonus plugin for Club-Greensock members ... Bonus plugins on codepen ...
+- learn eventlistners
+
+- CHECK ALL THE PLUGINS: ALL AND ESPECIALLY SVG-PLUGINS(DrawSVG)

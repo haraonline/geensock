@@ -47,6 +47,7 @@ circle {
     width: 500px;
     height: 350px;
     display: flex;
+    visibility: hidden;
 }
 
 #circle1 {

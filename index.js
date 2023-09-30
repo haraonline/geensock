@@ -86,8 +86,20 @@ document.getElementById("restart").onclick = () => tween.restart();
 //     .from("#circle3", { y:200, duration:1, ease:"bounce"}, "+=1")    
 //     .from("#circle3", { y:200, duration:1, ease:"bounce"}, "<0.5")    
 
-gsap.timeline()
-    .from("#circle1", { y:200, duration:1, ease:"bounce"}, 1)
-    .from("#circle2", { y:200, duration:1, ease:"bounce"}, 3)
-    .from("#circle3", { y:200, duration:1, ease:"bounce"}, 2) 
+var tl = gsap.timeline({ defaults:{opacity:0, ease:"slowMo"}});
+
+function init() {
+
+    tl.from(".box", { ease:"bounce", autoAlpha:0})
+      .from("#circle1", { y:200, duration:1} )
+      .from("#circle2", { y:200, duration:2}, "<" )
+      .from("#circle3", { y:200, duration:3}, "-=2" )
+}
+
+window.addEventListener("load", function(event) {
+    init();
+});
     
+// GSDevTools.create(); // create the GSDevTools panel
+
+// AutoAlpha special property - opacity and visibility
