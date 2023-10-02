@@ -87,7 +87,7 @@ document.getElementById("restart").onclick = () => tween.restart();
 //     .from("#circle3", { y:200, duration:1, ease:"bounce"}, "<0.5")    
 
 gsap.timeline()
-    .from("#circle1", { scaleX:10, duration:1, ease:"bounce"}, 1)
-    .from("#circle2", { skewY:45, duration:1, ease:"bounce"}, 3)
-    .from("#circle3", { skewX:45, duration:1, ease:"bounce"}, 2) 
+    .from("#circle1", { y:200, duration:1, ease:"bounce"}, 1)
+    .from("#circle2", { y:200, duration:1, ease:"bounce"}, 3)
+    .from("#circle3", { y:200, duration:1, ease:"bounce"}, 2) 
     
